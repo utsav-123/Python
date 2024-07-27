@@ -1,0 +1,15 @@
+import matplotlib.pyplot as plt
+
+x = ["python","c","c++","java"]
+y = [85, 70, 60, 82]
+
+
+plt.xlabel("Language", fontsize = 15)
+plt.ylabel("No.", fontsize = 15)
+plt.title("Popularity", fontsize = 15)
+
+c = ["r","b","m","g"]
+plt.bar(x,y, width = 0.4, color = c, align = "center", edgecolor = "r", linewidth = 3, linestyle = ":", alpha = 0.7, label = "name")
+
+plt.legend()
+plt.show()
