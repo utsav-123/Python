@@ -1,0 +1,51 @@
+// Simple Scatter plot
+import matplotlib.pyplot as plt
+x = [1,2,3,4,5,6,7]
+y = [2,3,4,5,7,6,9]
+
+color = ["r","y","g","b","r","m","g"]
+size = [135,145,150,160,170,177,193]
+
+plt.title("Scatter Plot", fontsize = 20)
+plt.xlabel("Day", fontsize = 15)
+plt.ylabel ("No.", fontsize = 15)
+
+plt.scatter(x,y, c = color, s = size, alpha = 0.8, marker = "*", edgecolor = "g", linewidth = 1 )
+plt.show()
+
+
+//ColorBar Scatter plot
+import matplotlib.pyplot as plt
+x = [1,2,3,4,5,6,7]
+y = [2,3,4,5,7,6,9]
+
+color = [10,49,30,29,56,20,30]
+size = [135,145,150,160,170,177,193]
+
+plt.title("Scatter Plot", fontsize = 20)
+plt.xlabel("Day", fontsize = 15)
+plt.ylabel ("No.", fontsize = 15)
+
+plt.scatter(x,y, c = color, s = size, alpha = 0.8, marker = "*", edgecolor = "g", linewidth = 1, cmap = "viridis")
+t = plt.colorbar()
+t.set_label("ColorBar", fontsize = 15)
+plt.show()
+
+
+// Two data Scatter bar
+import matplotlib.pyplot as plt
+x = [1,2,3,4,5,6,7]
+y = [2,3,4,5,7,6,9]
+y1 = [3,4,5,8,9,1,6]
+color = [10,49,30,29,56,20,30]
+size = [135,145,150,160,170,177,193]
+
+plt.title("Scatter Plot", fontsize = 20)
+plt.xlabel("Day", fontsize = 15)
+plt.ylabel ("No.", fontsize = 15)
+
+plt.scatter(x,y, c = color, s = size, alpha = 0.8, marker = "*", edgecolor = "g", linewidth = 1, cmap = "viridis")
+plt.scatter(x,y1, color = "r", s = size, alpha = 0.8, edgecolor = "g", linewidth = 1, cmap = "viridis")
+t = plt.colorbar()
+t.set_label("ColorBar", fontsize = 15)
+plt.show()
