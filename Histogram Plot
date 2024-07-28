@@ -1,0 +1,95 @@
+import matplotlib.pyplot as plt
+import numpy as np
+import random
+
+x = np.random.randint(10,60,(50))
+print(x)
+no = [13, 59, 41, 24, 19, 50, 25, 46, 28, 42, 52, 34, 44, 18, 35, 55, 38, 28, 27, 43, 41, 43, 38, 13,
+ 21, 58, 16, 19, 42, 57, 46, 49, 42, 55, 51, 37, 48, 16, 58, 59, 26, 11, 42, 53, 53, 40, 48, 42,
+ 46, 27]
+l = [10,20,30,40,50,60]
+plt.title("UP")
+plt.xlabel("python")
+plt.ylabel("No.")
+
+plt.hist(no, color = "g", bins = l, edgecolor = "r", align = "mid")
+plt.show()
+
+
+
+no = [13, 59, 41, 24, 19, 50, 25, 46, 28, 42, 52, 34, 44, 18, 35, 55, 38, 28, 27, 43, 41, 43, 38, 13,
+ 21, 58, 16, 19, 42, 57, 46, 49, 42, 55, 51, 37, 48, 16, 58, 59, 26, 11, 42, 53, 53, 40, 48, 42,
+ 46, 27]
+l = [10,20,30,40,50,60]
+plt.title("UP")
+plt.xlabel("python")
+plt.ylabel("No.")
+
+plt.hist(no, "auto" ,(0,100), edgecolor = "r")
+plt.show()
+
+
+import matplotlib.pyplot as plt
+no = [13, 59, 41, 24, 19, 50, 25, 46, 28, 42, 52, 34, 44, 18, 35, 55, 38, 28, 27, 43, 41, 43, 38, 13,
+ 21, 58, 16, 19, 42, 57, 46, 49, 42, 55, 51, 37, 48, 16, 58, 59, 26, 11, 42, 53, 53, 40, 48, 42,
+ 46, 27]
+l = [10,20,30,40,50,60]
+plt.title("UP")
+plt.xlabel("python")
+plt.ylabel("No.")
+
+plt.hist(no, color = "b", edgecolor = "r", bottom = 10,cumulative = -1)
+plt.show()
+
+import matplotlib.pyplot as plt
+no = [13, 59, 41, 24, 19, 50, 25, 46, 28, 42, 52, 34, 44, 18, 35, 55, 38, 28, 27, 43, 41, 43, 38, 13,
+ 21, 58, 16, 19, 42, 57, 46, 49, 42, 55, 51, 37, 48, 16, 58, 59, 26, 11, 42, 53, 53, 40, 48, 42,
+ 46, 27]
+l = [10,20,30,40,50,60]
+plt.title("UP")
+plt.xlabel("python")
+plt.ylabel("No.")
+
+plt.hist(no, color = "b",bottom = 10,bins = l, edgecolor ="r", align = "mid", rwidth = 0.8)
+plt.show()
+
+
+import matplotlib.pyplot as plt
+no = [13, 59, 41, 24, 19, 50, 25, 46, 28, 42, 52, 34, 44, 18, 35, 55, 38, 28, 27, 43, 41, 43, 38, 13,
+ 21, 58, 16, 19, 42, 57, 46, 49, 42, 55, 51, 37, 48, 16, 58, 59, 26, 11, 42, 53, 53, 40, 48, 42,
+ 46, 27]
+l = [10,20,30,40,50,60]
+plt.title("UP")
+plt.xlabel("python")
+plt.ylabel("No.")
+
+plt.hist(no, color = "b",bins = l, edgecolor ="r", histtype ="barstacked",orientation = "horizontal", rwidth = 0.8)
+plt.show()
+
+
+import matplotlib.pyplot as plt
+no = [13, 59, 41, 24, 19, 50, 25, 46, 28, 42, 52, 34, 44, 18, 35, 55, 38, 28, 27, 43, 41, 43, 38, 13,
+ 21, 58, 16, 19, 42, 57, 46, 49, 42, 55, 51, 37, 48, 16, 58, 59, 26, 11, 42, 53, 53, 40, 48, 42,
+ 46, 27]
+l = [10,20,30,40,50,60]
+plt.title("UP")
+plt.xlabel("python")
+plt.ylabel("No.")
+
+plt.hist(no, color = "b",bins = l, edgecolor ="r", histtype ="barstacked", rwidth = 0.8, log=True)
+plt.show()
+
+
+ no = [13, 59, 41, 24, 19, 50, 25, 46, 28, 42, 52, 34, 44, 18, 35, 55, 38, 28, 27, 43, 41, 43, 38, 13,
+ 21, 58, 16, 19, 42, 57, 46, 49, 42, 55, 51, 37, 48, 16, 58, 59, 26, 11, 42, 53, 53, 40, 48, 42,
+ 46, 27]
+l = [10,20,30,40,50,60]
+plt.title("UP")
+plt.xlabel("python")
+plt.ylabel("No.")
+
+plt.hist(no, color = "m", bins = l, edgecolor = "r", label = "python")
+plt.axvline(45, color = "g", label = "line")
+plt.grid()
+plt.legend()
+plt.show()
